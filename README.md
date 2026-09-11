@@ -19,20 +19,30 @@ The objective of this project is to create a self-contained environment where cy
 
 🎯 **Project Objectives**
 
+
+#	**Objective	Description**
 I should be able to:
 
-#	Objective	Description
-1	Install and configure a desktop virtualization platform	Set up and configure VirtualBox or another suitable virtualization platform on the host system.
-2	Deploy a Kali Linux virtual machine	Download, import, and configure a Kali Linux VM for cybersecurity laboratory activities.
-3	Configure virtual networking for an isolated environment	Create and configure a dedicated virtual network to keep laboratory systems separated from the host and production networks.
-4	Understand NAT-based virtual networking	Learn how Network Address Translation (NAT) enables virtual machines to communicate while using private IP addresses.
-5	Verify connectivity between virtual machines	Test network communication between laboratory VMs using appropriate networking and diagnostic commands.
-6	Create restore points/snapshots before experimentation	Create clean VM snapshots that allow the laboratory environment to be restored after experiments.
-7	Perform basic Linux system verification	Check system information, network interfaces, IP configuration, routing, and basic connectivity within Kali Linux.
-8	Document a cybersecurity lab in a reproducible way	Record installation steps, configurations, screenshots, commands, and verification results so the environment can be rebuilt.
-9	Troubleshoot common virtualization and networking problems	Identify and resolve issues involving VM resources, network adapters, IP addresses, routing, DNS, and virtual network configuration.
+Install and configure a desktop virtualization platform.
+
+Deploy a Kali Linux virtual machine.
+
+Configure virtual networking for an isolated environment.
+
+Understand NAT-based virtual networking.
+
+Verify connectivity between virtual machines.
+
+Create restore points/snapshots before experimentation.
+
+Perform basic Linux system verification.
+
+Document a cybersecurity lab in a reproducible way.
+
+Troubleshoot common virtualization and networking problems.net that does not conflict with your existing physical or corporate network.
 
 🏗️ **Lab Architecture**
+
 The laboratory uses a virtualized network rather than connecting testing machines directly to the physical LAN.
 
                     HOST COMPUTER
@@ -52,7 +62,10 @@ The laboratory uses a virtualized network rather than connecting testing machine
                  │      VM       │
                  └───────────────┘
 
-Network Design
+**Network Design**
+
+<img width="958" height="505" alt="image" src="https://github.com/user-attachments/assets/a67d8c3e-0833-4e75-9a64-6f7177c45b6e" />
+
 The virtual network provides a controlled communication boundary for the laboratory.
 
 The exact subnet can be customized according to the host environment. For example:
@@ -63,16 +76,22 @@ DHCP Range:  192.168.56.100 - 192.168.56.200
 
 Note: These addresses are examples. Use a subnet that does not conflict with your existing physical or corporate network.
 
-💻 Lab Components
+💻**Lab Components**
+
 Component	Purpose
 Host Operating System	Runs the virtual laboratory
 VirtualBox	Provides virtualization
 Kali Linux	Security testing and learning platform
+
 Virtual NAT Network	Provides controlled virtual connectivity
 VM Snapshot	Allows the environment to be restored
+
+<img width="959" height="458" alt="image" src="https://github.com/user-attachments/assets/9d78b75e-e8f9-4b69-ad8d-3a7752273af8" />
+
 GitHub	Stores documentation and configuration notes
 
-🚀 Lab Deployment
+🚀 **Lab Deployment**
+
 1. Prepare the Host
 Before creating the virtual machine, make sure the host computer has sufficient resources.
 
@@ -105,7 +124,8 @@ Version: X.X.X
 Host OS: Windows/Linux/macOS
 
 3. Obtain Kali Linux
-Download a Kali Linux image appropriate for your virtualization platform.
+4. 
+<img width="953" height="456" alt="image" src="https://github.com/user-attachments/assets/0258e063-71c5-494b-ad20-b823515371e0" />
 
 Possible formats include:
 
