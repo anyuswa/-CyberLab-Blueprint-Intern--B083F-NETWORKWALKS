@@ -2,6 +2,7 @@
 INTERNSHIP for cybersecurity laboratory designed for learning Linux administration, virtualization, networking, and defensive/offensive security concepts in a controlled environment.
 
 📌 Project Overview
+
 CyberLab Blueprint is a personal cybersecurity laboratory built with virtualization technology and Kali Linux.
 
 The objective of this project is to create a self-contained environment where cybersecurity tools and networking concepts can be explored without intentionally interacting with production systems or external networks.
