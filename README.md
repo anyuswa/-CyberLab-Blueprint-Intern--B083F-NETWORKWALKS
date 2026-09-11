@@ -18,17 +18,19 @@ The objective of this project is to create a self-contained environment where cy
 📝 **Documentation** — record configuration decisions, verification steps, and lessons learned.
 
 🎯 **Project Objectives**
+
 I should be able to:
 
--Install and configure a desktop virtualization platform.
--Deploy a Kali Linux virtual machine.
--Configure virtual networking for an isolated environment.
--Understand NAT-based virtual networking.
--Verify connectivity between virtual machines.
--Create restore points/snapshots before experimentation.
--Perform basic Linux system verification.
--Document a cybersecurity lab in a reproducible way.
--Troubleshoot common virtualization and networking problems.
+#	Objective	Description
+1	Install and configure a desktop virtualization platform	Set up and configure VirtualBox or another suitable virtualization platform on the host system.
+2	Deploy a Kali Linux virtual machine	Download, import, and configure a Kali Linux VM for cybersecurity laboratory activities.
+3	Configure virtual networking for an isolated environment	Create and configure a dedicated virtual network to keep laboratory systems separated from the host and production networks.
+4	Understand NAT-based virtual networking	Learn how Network Address Translation (NAT) enables virtual machines to communicate while using private IP addresses.
+5	Verify connectivity between virtual machines	Test network communication between laboratory VMs using appropriate networking and diagnostic commands.
+6	Create restore points/snapshots before experimentation	Create clean VM snapshots that allow the laboratory environment to be restored after experiments.
+7	Perform basic Linux system verification	Check system information, network interfaces, IP configuration, routing, and basic connectivity within Kali Linux.
+8	Document a cybersecurity lab in a reproducible way	Record installation steps, configurations, screenshots, commands, and verification results so the environment can be rebuilt.
+9	Troubleshoot common virtualization and networking problems	Identify and resolve issues involving VM resources, network adapters, IP addresses, routing, DNS, and virtual network configuration.
 
 🏗️ **Lab Architecture**
 The laboratory uses a virtualized network rather than connecting testing machines directly to the physical LAN.
