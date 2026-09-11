@@ -7,25 +7,30 @@ CyberLab Blueprint is a personal cybersecurity laboratory built with virtualizat
 
 The objective of this project is to create a self-contained environment where cybersecurity tools and networking concepts can be explored without intentionally interacting with production systems or external networks.
 
-The lab is designed around four principles:
+**The lab is designed around four principles:**
 
-🔒 Isolation — keep laboratory activity separated from normal devices and networks.
-🔁 Reproducibility — make the environment easy to rebuild.
-🧪 Experimentation — provide a safe place to test security concepts.
-📝 Documentation — record configuration decisions, verification steps, and lessons learned.
-🎯 Project Objectives
-By completing this laboratory, you should be able to:
+🔒 **Isolation** — keep laboratory activity separated from normal devices and networks.
 
-Install and configure a desktop virtualization platform.
-Deploy a Kali Linux virtual machine.
-Configure virtual networking for an isolated environment.
-Understand NAT-based virtual networking.
-Verify connectivity between virtual machines.
-Create restore points/snapshots before experimentation.
-Perform basic Linux system verification.
-Document a cybersecurity lab in a reproducible way.
-Troubleshoot common virtualization and networking problems.
-🏗️ Lab Architecture
+🔁**Reproducibility**— make the environment easy to rebuild.
+
+🧪 **Experimentation** — provide a safe place to test security concepts.
+
+📝 **Documentation** — record configuration decisions, verification steps, and lessons learned.
+
+🎯 **Project Objectives**
+I should be able to:
+
+-Install and configure a desktop virtualization platform.
+-Deploy a Kali Linux virtual machine.
+-Configure virtual networking for an isolated environment.
+-Understand NAT-based virtual networking.
+-Verify connectivity between virtual machines.
+-Create restore points/snapshots before experimentation.
+-Perform basic Linux system verification.
+-Document a cybersecurity lab in a reproducible way.
+-Troubleshoot common virtualization and networking problems.
+
+🏗️ **Lab Architecture**
 The laboratory uses a virtualized network rather than connecting testing machines directly to the physical LAN.
 
                     HOST COMPUTER
