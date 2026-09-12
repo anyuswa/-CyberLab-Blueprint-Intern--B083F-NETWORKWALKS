@@ -175,15 +175,21 @@ DHCP:         Enabled
 
 The important goal is to create a predictable virtual network rather than blindly copying a particular subnet.
 
-Why a Separate Network?
+**Why a Separate Network?**
 A dedicated virtual network makes it easier to:
 
 Identify laboratory systems.
+
 Add additional virtual machines later.
+
 Troubleshoot connectivity.
+
 Rebuild the environment.
+
 Keep experiments organized.
-🖥️ 6. Configure Kali Networking
+
+🖥️ **6. Configure Kali Networking**
+
 Open the Kali VM's network configuration and attach the network adapter to the newly created virtual network.
 
 Start Kali and inspect the available interfaces:
@@ -378,7 +384,7 @@ cyberlab-blueprint/
 📸 **Evidence & Documentation**
 
 Screenshots should demonstrate the configuration rather than simply decorate the repository.
-
+<img width="960" height="540" alt="Screenshot 2026-09-12 122933" src="https://github.com/user-attachments/assets/7b431568-92f6-4f42-b20a-f3da4a432340" />
 
 Recommended evidence:
 
