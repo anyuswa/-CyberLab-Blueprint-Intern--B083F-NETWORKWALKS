@@ -21,29 +21,31 @@ The objective of this project is to create a self-contained environment where cy
 
 
 #	**Objective	Description**
-I should be able to:
 
-Install and configure a desktop virtualization platform.
+🖥️ Install and configure a desktop virtualization platform for cybersecurity experimentation.
 
-Deploy a Kali Linux virtual machine.
+🐧 Deploy and configure a Kali Linux virtual machine (VM) as a controlled security-testing environment.
 
-Configure virtual networking for an isolated environment.
+🌐 Design and configure virtual networking to create an isolated lab environment that does not conflict with an existing physical or corporate network.
 
-Understand NAT-based virtual networking.
+🔄 Understand NAT-based virtual networking, including how Network Address Translation enables virtual machines to access external networks while remaining separated from the physical network.
 
-Verify connectivity between virtual machines.
+🔗 Configure and verify VM-to-VM connectivity using appropriate network settings and basic diagnostic tools.
 
-Create restore points/snapshots before experimentation.
+💾 Create snapshots/restore points before making significant configuration changes or conducting experiments, allowing the lab to be safely rolled back.
 
-Perform basic Linux system verification.
+🔍 Perform basic Linux system verification, including checking system information, network configuration, connectivity, services, and resource availability.
 
-Document a cybersecurity lab in a reproducible way.
+📝 Document the cybersecurity lab in a clear and reproducible manner, including VM specifications, network configuration, commands used, test results, and troubleshooting steps.
 
-Troubleshoot common virtualization and networking problems.net that does not conflict with your existing physical or corporate network.
+🛠️ Troubleshoot common virtualization and networking issues, such as incorrect adapter settings, IP-address conflicts, DNS problems, routing issues, and VM connectivity failures.
 
 🏗️ **Lab Architecture**
 
 The laboratory uses a virtualized network rather than connecting testing machines directly to the physical LAN.
+The lab should provide a safe, repeatable, and isolated environment in which cybersecurity concepts can be explored without interfering with the host computer, existing physical network, or corporate infrastructure.
+
+Host Computer → Virtualization Platform → Isolated Virtual Network → Kali Linux VM(s)
 
                     HOST COMPUTER
                          │
@@ -242,13 +244,8 @@ The baseline snapshot provides a known-good recovery point.
 
 For example:
 
-Clean Baseline
-      │
-      ├── Security Experiment A
-      │
-      ├── Security Experiment B
-      │
-      └── Network Experiment
+<img width="243" height="121" alt="image" src="https://github.com/user-attachments/assets/7f784cbe-77c8-486d-b073-fd598b24eea2" />
+
 
 If an experiment damages the VM configuration, restore the baseline instead of rebuilding the entire machine.
 
@@ -285,11 +282,17 @@ Then verify the VirtualBox NAT Network configuration.
 Potential causes include:
 
 Incorrect adapter configuration
+
 Incorrect virtual network
+
 Disabled adapter
+
 Conflicting subnet
+
 Network service failure
+
 Internet access does not work
+
 First determine whether the problem is connectivity or DNS.
 
 Test the gateway:
@@ -361,62 +364,12 @@ Recommended Isolation Model
 
 The laboratory should be treated as an experimental environment, not as a production network.
 
-📁 **Repository Structure**
-
-The repository is organized to separate documentation, configuration, and verification material.
-
-cyberlab-blueprint/
-│
-├── README.md
-│
-├── docs/
-│   ├── architecture.md
-│   ├── installation.md
-│   ├── networking.md
-│   ├── troubleshooting.md
-│   └── lessons-learned.md
-│
-├── screenshots/
-│   ├── 01-virtualbox.png
-│   ├── 02-kali-import.png
-│   ├── 03-network-config.png
-│   ├── 04-kali-ip.png
-│   └── 05-verification.png
-│
-├── configs/
-│   └── network-notes.md
-│
-└── verification/
-    └── checklist.md
-
 📸 **Evidence & Documentation**
 
 Screenshots should demonstrate the configuration rather than simply decorate the repository.
 <img width="960" height="540" alt="Screenshot 2026-09-12 122933" src="https://github.com/user-attachments/assets/7b431568-92f6-4f42-b20a-f3da4a432340" />
 
-Recommended evidence:
 
-Virtualization
-Capture:
-
-VirtualBox installation/version
-Imported Kali VM
-VM hardware configuration
-Networking
-Capture:
-
-NAT Network configuration
-VM adapter configuration
-Kali IP address
-Routing table
-Verification
-Capture:
-
-Successful gateway test
-DNS test, where applicable
-Final clean VM state
-
-Avoid uploading screenshots containing passwords, private keys, API tokens, personal information, or other sensitive data.
 
 🧠 **Lessons Learned**
 Building the laboratory demonstrates several important cybersecurity concepts.
@@ -435,10 +388,7 @@ Virtual NAT
 Bridged Networking
 Host-Only Networking
 
-is essential when building security labs.
-
-Snapshots improve experimentation
-A clean baseline makes it possible to experiment aggressively while maintaining a reliable recovery point.
+is essential when building security labs to:
 
 **Documentation is part of cybersecurity**
 A lab that cannot be reproduced is difficult to troubleshoot, maintain, or improve.
@@ -468,29 +418,10 @@ Potential additions include:
 
 A possible future architecture:
 
-                         CYBERLAB
-                            │
-                ┌───────────┴───────────┐
-                │     Virtual Network   │
-                └───────────┬───────────┘
-                            │
-          ┌─────────────────┼─────────────────┐
-          │                 │                 │
-      Kali Linux        Windows VM        Linux Server
-          │                 │                 │
-          └─────────────────┼─────────────────┘
-                            │
-                     Monitoring/SIEM
+<img width="347" height="242" alt="image" src="https://github.com/user-attachments/assets/48886fbd-001b-4c66-96b9-8624fe8fc2b9" />
 
 
-⚠️ **Responsible Use**
-This repository is intended for education, authorized testing, and cybersecurity skill development.
-
-Do not use techniques learned in this laboratory against systems, networks, accounts, applications, or data without explicit authorization.
-
-The safest environment for experimentation is a deliberately constructed laboratory containing systems you own or are specifically authorized to test.
-
-👤 **Project Status**
+👤 **Project Status/**
 
 Status: 🟢 Active Development
 
@@ -500,9 +431,11 @@ Primary Platform: Kali Linux
 
 Virtualization: VirtualBox
 
+🔐 Security & Ethical Use
+
 Purpose: Cybersecurity education and practical laboratory development
 
-🔗 Tools & Resources
+🔗 **Tools & Resources**
 
 7-Zip: https://7-zip.org/download.html
 
