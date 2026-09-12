@@ -86,8 +86,6 @@ Kali Linux	Security testing and learning platform
 Virtual NAT Network	Provides controlled virtual connectivity
 VM Snapshot	Allows the environment to be restored
 
-<img width="959" height="458" alt="image" src="https://github.com/user-attachments/assets/9d78b75e-e8f9-4b69-ad8d-3a7752273af8" />
-
 GitHub	Stores documentation and configuration notes
 
 🚀 **Lab Deployment**
@@ -106,7 +104,8 @@ Internet	Required for downloads and updates
 
 Hardware requirements may vary depending on how many virtual machines you eventually add.
 
-2. Install Virtualization Software
+2. **Install Virtualization Software**
+3. 
 Install Oracle VirtualBox on the host machine.
 
 After installation, confirm that the application starts correctly.
@@ -128,14 +127,18 @@ Host OS: Windows/Linux/macOS
 
 Possible formats include:
 
-VirtualBox image
+<img width="959" height="458" alt="image" src="https://github.com/user-attachments/assets/9d78b75e-e8f9-4b69-ad8d-3a7752273af8" />
+
 ISO installer
+VirtualBox: https://virtualbox.org/wiki/Downloads
+
 Other supported virtual machine formats
 For this laboratory, using a pre-built VirtualBox image can simplify deployment.
 
 Only download operating-system images from trusted/official sources.
 
-4. Import the Kali Virtual Machine
+**4. Import the Kali Virtual Machine**
+
 Open VirtualBox and import the Kali appliance.
 
 Typical workflow:
@@ -160,9 +163,11 @@ Virtual disk
 Network adapter
 USB settings
 Shared folders
+
 Avoid allocating so many host resources that the host operating system becomes unstable.
 
-🌐 5. Configure the Virtual Network
+🌐 **5. Configure the Virtual Network**
+
 The network configuration is one of the most important parts of the laboratory.
 
 Create a dedicated virtual NAT network for the lab.
@@ -176,6 +181,7 @@ DHCP:         Enabled
 The important goal is to create a predictable virtual network rather than blindly copying a particular subnet.
 
 **Why a Separate Network?**
+
 A dedicated virtual network makes it easier to:
 
 Identify laboratory systems.
@@ -207,7 +213,8 @@ default via 192.168.56.1 dev eth0
 
 Your interface name and addresses may differ.
 
-🔎 7. Verify the Environment
+🔎 **7. Verify the Environment**
+
 Before performing any security exercises, verify that the laboratory is functioning correctly.
 
 Check the hostname
@@ -245,7 +252,8 @@ Clean Baseline
 
 If an experiment damages the VM configuration, restore the baseline instead of rebuilding the entire machine.
 
-✅ 9. Laboratory Verification Checklist
+✅ **9. Laboratory Verification Checklist**
+
 Use the following checklist before beginning experiments.
 
 <img width="412" height="295" alt="image" src="https://github.com/user-attachments/assets/c820a2c2-9f9f-40b8-8efb-a2e38d1cf7e2" />
@@ -407,12 +415,14 @@ Capture:
 Successful gateway test
 DNS test, where applicable
 Final clean VM state
+
 Avoid uploading screenshots containing passwords, private keys, API tokens, personal information, or other sensitive data.
 
 🧠 **Lessons Learned**
 Building the laboratory demonstrates several important cybersecurity concepts.
 
-Virtualization is more than running another operating system
+**Virtualization is more than running another operating system**
+
 A virtual machine provides an isolated environment where configurations can be changed and restored without necessarily affecting the host.
 
 **Network design matters**
@@ -430,7 +440,7 @@ is essential when building security labs.
 Snapshots improve experimentation
 A clean baseline makes it possible to experiment aggressively while maintaining a reliable recovery point.
 
-Documentation is part of cybersecurity
+**Documentation is part of cybersecurity**
 A lab that cannot be reproduced is difficult to troubleshoot, maintain, or improve.
 
 🔭 **Future Improvements**
@@ -481,6 +491,7 @@ Do not use techniques learned in this laboratory against systems, networks, acco
 The safest environment for experimentation is a deliberately constructed laboratory containing systems you own or are specifically authorized to test.
 
 👤 **Project Status**
+
 Status: 🟢 Active Development
 
 Environment: Virtualized Cybersecurity Laboratory
@@ -491,9 +502,25 @@ Virtualization: VirtualBox
 
 Purpose: Cybersecurity education and practical laboratory development
 
+🔗 Tools & Resources
+
+7-Zip: https://7-zip.org/download.html
+
+VirtualBox: https://virtualbox.org/wiki/Downloads
+
+Kali Linux: https://kali.org/get-kali
+
+👤 Author
+
+**ASANDA LLOYD NYUSWA**
+
+Cybersecurity Professional **B083F**
+
 ⭐ **Final Goal**
 The goal of CyberLab Blueprint is not simply to install Kali Linux.
 
 It is to build a repeatable cybersecurity environment where new technologies, configurations, defensive controls, and security concepts can be tested safely.
 
 Build it. Break it. Restore it. Learn from it.
+
+
