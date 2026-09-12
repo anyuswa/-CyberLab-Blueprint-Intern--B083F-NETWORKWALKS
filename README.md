@@ -318,11 +318,17 @@ This project is intended for authorized cybersecurity education and laboratory e
 When expanding the environment:
 
 Use systems that you own or have explicit permission to test.
+
 Keep intentionally vulnerable machines inside the laboratory network.
+
 Avoid exposing vulnerable VMs directly to the public Internet.
+
 Do not reuse production credentials.
+
 Do not store sensitive credentials in this repository.
+
 Review network adapter settings before starting security experiments.
+
 Recommended Isolation Model
                  INTERNET
                     │
@@ -403,7 +409,7 @@ Building the laboratory demonstrates several important cybersecurity concepts.
 Virtualization is more than running another operating system
 A virtual machine provides an isolated environment where configurations can be changed and restored without necessarily affecting the host.
 
-Network design matters
+**Network design matters**
 Security experiments depend heavily on understanding how systems communicate.
 
 Knowing the difference between:
