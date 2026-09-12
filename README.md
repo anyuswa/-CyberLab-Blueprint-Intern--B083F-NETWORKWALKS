@@ -330,47 +330,9 @@ Check host resource usage.
 
 🖥️ Avoid running more VMs than the host can comfortably support.
 
-🔐 **Security Considerations**
+📸 **SCREENSHOT**
 
-This project is intended for authorized cybersecurity education and laboratory experimentation.
-
-When expanding the environment:
-
-Use systems that you own or have explicit permission to test.
-
-Keep intentionally vulnerable machines inside the laboratory network.
-
-Avoid exposing vulnerable VMs directly to the public Internet.
-
-Do not reuse production credentials.
-
-Do not store sensitive credentials in this repository.
-
-Review network adapter settings before starting security experiments.
-
-Recommended Isolation Model
-                 INTERNET
-                    │
-                    X
-              Avoid direct
-             exposure of lab
-                    │
-             ┌──────┴──────┐
-             │   HOST OS   │
-             └──────┬──────┘
-                    │
-             ┌──────┴──────┐
-             │ CyberLab VM │
-             │   Network   │
-             └─────────────┘
-
-The laboratory should be treated as an experimental environment, not as a production network.
-
-📸 **Evidence & Documentation**
-
-Screenshots should demonstrate the configuration rather than simply decorate the repository.
 <img width="960" height="540" alt="Screenshot 2026-09-12 122933" src="https://github.com/user-attachments/assets/7b431568-92f6-4f42-b20a-f3da4a432340" />
-
 
 
 🧠 **Lessons Learned**
@@ -436,6 +398,9 @@ Virtualization: VirtualBox
 🔐 Security & Ethical Use
 
 Purpose: Cybersecurity education and practical laboratory development
+
+<img width="240" height="218" alt="image" src="https://github.com/user-attachments/assets/b225f070-7064-472d-b2e7-ad30a226bc99" />
+
 
 🔗 **Tools & Resources**
 
