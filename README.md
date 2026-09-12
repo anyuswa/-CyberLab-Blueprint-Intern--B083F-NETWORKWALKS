@@ -260,19 +260,21 @@ Use the following checklist before beginning experiments.
 
 Kali has no IP address
 Check:
-
-ip addr
+**ip address:**
 
 Then inspect the network connection:
+**ip link**
 
-ip link
+VirtualBox Network Adapter Checklist
 
-Confirm that the VirtualBox network adapter is:
+🟢 Enabled
 
-Enabled
-Connected
-Attached to the correct virtual network
-Gateway cannot be reached
+🔌 Connected
+
+
+🌐 Attached to the correct virtual network
+⚠️ Gateway cannot be reached
+
 Check the routing table:
 
 ip route
