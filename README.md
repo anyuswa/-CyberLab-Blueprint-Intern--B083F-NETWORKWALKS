@@ -125,7 +125,6 @@ Host OS: Windows/Linux/macOS
 
 3. Obtain Kali Linux
 4. 
-<img width="953" height="456" alt="image" src="https://github.com/user-attachments/assets/0258e063-71c5-494b-ad20-b823515371e0" />
 
 Possible formats include:
 
@@ -222,10 +221,7 @@ ping -c 4 example.com
 
 If external connectivity is intentionally disabled, skip the final test.
 
-🧪 8. Create a Clean Snapshot
-Once Kali has been installed, configured, updated, and verified, create a clean snapshot.
-
-Suggested snapshot name:
+🧪 8. <img width="953" height="456" alt="image" src="https://github.com/user-attachments/assets/0258e063-71c5-494b-ad20-b823515371e0" />
 
 CyberLab-Clean-Baseline
 
@@ -246,18 +242,11 @@ If an experiment damages the VM configuration, restore the baseline instead of r
 ✅ 9. Laboratory Verification Checklist
 Use the following checklist before beginning experiments.
 
- VirtualBox launches successfully.
- Kali Linux starts without errors.
- Kali has sufficient CPU and memory.
- Network adapter is attached to the intended virtual network.
- Kali receives an appropriate IP address.
- Default route is present.
- Virtual gateway responds.
- DNS works when Internet access is intended.
- System packages are updated.
- Clean VM snapshot has been created.
- Lab documentation has been updated.
-🔧 Troubleshooting
+<img width="412" height="295" alt="image" src="https://github.com/user-attachments/assets/c820a2c2-9f9f-40b8-8efb-a2e38d1cf7e2" />
+
+ 
+🔧 **Troubleshooting**
+
 Kali has no IP address
 Check:
 
@@ -310,14 +299,20 @@ VM → Internet → DNS problem
 VM performance is poor
 Check host resource usage.
 
-Possible improvements:
+**Possible improvements:**
 
-Increase RAM allocation if sufficient host memory exists.
-Increase CPU allocation carefully.
-Close unnecessary host applications.
-Ensure hardware virtualization is enabled.
-Avoid running more VMs than the host can comfortably support.
-🔐 Security Considerations
+🧠 Increase RAM allocation if sufficient host memory exists.
+
+⚙️ Increase CPU allocation carefully.
+
+🧹 Close unnecessary host applications.
+
+🔧 Ensure hardware virtualization is enabled.
+
+🖥️ Avoid running more VMs than the host can comfortably support.
+
+🔐 **Security Considerations**
+
 This project is intended for authorized cybersecurity education and laboratory experimentation.
 
 When expanding the environment:
@@ -346,7 +341,8 @@ Recommended Isolation Model
 
 The laboratory should be treated as an experimental environment, not as a production network.
 
-📁 Repository Structure
+📁 **Repository Structure**
+
 The repository is organized to separate documentation, configuration, and verification material.
 
 cyberlab-blueprint/
@@ -373,7 +369,8 @@ cyberlab-blueprint/
 └── verification/
     └── checklist.md
 
-📸 Evidence & Documentation
+📸 **Evidence & Documentation**
+
 Screenshots should demonstrate the configuration rather than simply decorate the repository.
 
 Recommended evidence:
