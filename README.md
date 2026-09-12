@@ -373,6 +373,7 @@ cyberlab-blueprint/
 
 Screenshots should demonstrate the configuration rather than simply decorate the repository.
 
+
 Recommended evidence:
 
 Virtualization
@@ -396,7 +397,7 @@ DNS test, where applicable
 Final clean VM state
 Avoid uploading screenshots containing passwords, private keys, API tokens, personal information, or other sensitive data.
 
-🧠 Lessons Learned
+🧠 **Lessons Learned**
 Building the laboratory demonstrates several important cybersecurity concepts.
 
 Virtualization is more than running another operating system
@@ -420,20 +421,29 @@ A clean baseline makes it possible to experiment aggressively while maintaining 
 Documentation is part of cybersecurity
 A lab that cannot be reproduced is difficult to troubleshoot, maintain, or improve.
 
-🔭 Future Improvements
+🔭 **Future Improvements**
 The laboratory can be expanded into a larger cybersecurity environment.
 
 Potential additions include:
 
 🐧 Additional Linux machines
+
 🪟 Windows evaluation VM
+
 🎯 Intentionally vulnerable machines
+
 📊 SIEM/logging server
+
 🔍 Network monitoring
+
 🛡️ Firewall/router VM
+
 🧪 Malware-analysis sandbox
+
 📡 Packet-capture environment
+
 🔐 Active Directory practice environment
+
 A possible future architecture:
 
                          CYBERLAB
@@ -450,21 +460,15 @@ A possible future architecture:
                             │
                      Monitoring/SIEM
 
-📋 Change Log
-Version	Date	Changes
-1.0	2026-09-09	Initial laboratory design
-1.1	TBD	Additional VM
-1.2	TBD	Monitoring infrastructure
-2.0	TBD	Multi-network architecture
 
-⚠️ Responsible Use
+⚠️ **Responsible Use**
 This repository is intended for education, authorized testing, and cybersecurity skill development.
 
 Do not use techniques learned in this laboratory against systems, networks, accounts, applications, or data without explicit authorization.
 
 The safest environment for experimentation is a deliberately constructed laboratory containing systems you own or are specifically authorized to test.
 
-👤 Project Status
+👤 **Project Status**
 Status: 🟢 Active Development
 
 Environment: Virtualized Cybersecurity Laboratory
@@ -475,7 +479,7 @@ Virtualization: VirtualBox
 
 Purpose: Cybersecurity education and practical laboratory development
 
-⭐ Final Goal
+⭐ **Final Goal**
 The goal of CyberLab Blueprint is not simply to install Kali Linux.
 
 It is to build a repeatable cybersecurity environment where new technologies, configurations, defensive controls, and security concepts can be tested safely.
